@@ -9,7 +9,7 @@ services:
   database:
     image: mariadb
     environment:
-      - MYSQL_ROOT_PASSWORD=root-secret-pw
+      - MYSQL_ROOT_PASSWORD=password
       - MYSQL_DATABASE=stk_addons
       - MYSQL_HOST=database
     volumes:
@@ -27,9 +27,9 @@ services:
       dockerfile: Dockerfile-db-init
       context: .
     environment:
-      - MYSQL_ROOT_PASSWORD=root-secret-pw
+      - MYSQL_ROOT_PASSWORD=password
       - MYSQL_USER=stk_addons
-      - MYSQL_USER_PASSWORD=your super secret password
+      - MYSQL_USER_PASSWORD=password
       - MYSQL_DATABASE=stk_addons
       - MYSQL_HOST=database
     command: [
