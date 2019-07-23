@@ -20,7 +20,7 @@ RUN apt update && apt -y install \
         php7.2-zip
 
 # install nodejs
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - &&
+# RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - &&
 RUN apt update && apt -y install nodejs
 
 # install yarn
